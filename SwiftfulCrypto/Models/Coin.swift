@@ -11,6 +11,7 @@ struct Coin: Identifiable, Codable {
     let id: String
     let symbol: String
     let name: String
+    let image: String
     let currentPrice, marketCap, marketCapRank, fullyDilutedValuation: Double?
     let totalVolume, high24H, low24H: Double?
     let priceChange24H, priceChangePercentage24H: Double?
@@ -25,6 +26,37 @@ struct Coin: Identifiable, Codable {
     let sparklineIn7D: SparklineIn7D?
     let priceChangePercentage24HInCurrency: Double?
     let currentHoldings: Double?
+
+    init(id: String, symbol: String, name: String, image: String, currentPrice: Double?, marketCap: Double?, marketCapRank: Double?, fullyDilutedValuation: Double?, totalVolume: Double?, high24H: Double?, low24H: Double?, priceChange24H: Double?, priceChangePercentage24H: Double?, marketCapChange24H: Double?, marketCapChangePercentage24H: Double?, circulatingSupply: Double?, totalSupply: Double?, maxSupply: Double?, ath: Double?, athChangePercentage: Double?, athDate: String?, atl: Double?, atlChangePercentage: Double?, atlDate: String?, lastUpdated: String?, sparklineIn7D: SparklineIn7D?, priceChangePercentage24HInCurrency: Double?, currentHoldings: Double?) {
+        self.id = id
+        self.symbol = symbol
+        self.name = name
+        self.image = image
+        self.currentPrice = currentPrice
+        self.marketCap = marketCap
+        self.marketCapRank = marketCapRank
+        self.fullyDilutedValuation = fullyDilutedValuation
+        self.totalVolume = totalVolume
+        self.high24H = high24H
+        self.low24H = low24H
+        self.priceChange24H = priceChange24H
+        self.priceChangePercentage24H = priceChangePercentage24H
+        self.marketCapChange24H = marketCapChange24H
+        self.marketCapChangePercentage24H = marketCapChangePercentage24H
+        self.circulatingSupply = circulatingSupply
+        self.totalSupply = totalSupply
+        self.maxSupply = maxSupply
+        self.ath = ath
+        self.athChangePercentage = athChangePercentage
+        self.athDate = athDate
+        self.atl = atl
+        self.atlChangePercentage = atlChangePercentage
+        self.atlDate = atlDate
+        self.lastUpdated = lastUpdated
+        self.sparklineIn7D = sparklineIn7D
+        self.priceChangePercentage24HInCurrency = priceChangePercentage24HInCurrency
+        self.currentHoldings = currentHoldings
+    }
 
     enum CodingKeys: String, CodingKey {
         case id, symbol, name, image
@@ -51,11 +83,11 @@ struct Coin: Identifiable, Codable {
         case lastUpdated = "last_updated"
         case sparklineIn7D = "sparkline_in_7d"
         case priceChangePercentage24HInCurrency = "price_change_percentage_24h_in_currency"
-        case currentHodlings
+        case currentHoldings
     }
 
     func updateHoldings(amound: Double) -> Coin {
-        return Coin(id: id, symbol: symbol, name: name, currentPrice: currentPrice, marketCap: marketCap, marketCapRank: marketCapRank, fullyDilutedValuation: fullyDilutedValuation, totalVolume: totalVolume, high24H: high24H, low24H: low24H, priceChange24H: priceChange24H, priceChangePercentage24H: priceChangePercentage24H, marketCapChange24H: marketCapChange24H, marketCapChangePercentage24H: marketCapChangePercentage24H, circulatingSupply: circulatingSupply, totalSupply: totalSupply, maxSupply: maxSupply, ath: ath, athChangePercentage: athChangePercentage, athDate: athDate, atl: atl, atlChangePercentage: atlChangePercentage, atlDate: atlDate, lastUpdated: lastUpdated, sparklineIn7D: sparklineIn7D, priceChangePercentage24HInCurrency: priceChangePercentage24HInCurrency, currentHoldings: amound)
+        return Coin(id: id, symbol: symbol, name: name, image: image, currentPrice: currentPrice, marketCap: marketCap, marketCapRank: marketCapRank, fullyDilutedValuation: fullyDilutedValuation, totalVolume: totalVolume, high24H: high24H, low24H: low24H, priceChange24H: priceChange24H, priceChangePercentage24H: priceChangePercentage24H, marketCapChange24H: marketCapChange24H, marketCapChangePercentage24H: marketCapChangePercentage24H, circulatingSupply: circulatingSupply, totalSupply: totalSupply, maxSupply: maxSupply, ath: ath, athChangePercentage: athChangePercentage, athDate: athDate, atl: atl, atlChangePercentage: atlChangePercentage, atlDate: atlDate, lastUpdated: lastUpdated, sparklineIn7D: sparklineIn7D, priceChangePercentage24HInCurrency: priceChangePercentage24HInCurrency, currentHoldings: amound)
     }
 
     var currentHoldingsValue: Double {
