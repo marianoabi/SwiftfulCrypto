@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		E1DEE1CC2C1012A300EF5534 /* SwiftfulCryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DEE1CB2C1012A300EF5534 /* SwiftfulCryptoApp.swift */; };
 		E1DEE1CE2C1012A300EF5534 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DEE1CD2C1012A300EF5534 /* ContentView.swift */; };
-		E1DEE1D02C1012A400EF5534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DEE1CF2C1012A400EF5534 /* Assets.xcassets */; };
 		E1DEE1D32C1012A400EF5534 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DEE1D22C1012A400EF5534 /* Preview Assets.xcassets */; };
+		E1DEE1DA2C10139900EF5534 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DEE1D92C10139900EF5534 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E1DEE1C82C1012A300EF5534 /* SwiftfulCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DEE1CB2C1012A300EF5534 /* SwiftfulCryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftfulCryptoApp.swift; sourceTree = "<group>"; };
 		E1DEE1CD2C1012A300EF5534 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E1DEE1CF2C1012A400EF5534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DEE1D22C1012A400EF5534 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1DEE1D92C10139900EF5534 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			children = (
 				E1DEE1CB2C1012A300EF5534 /* SwiftfulCryptoApp.swift */,
 				E1DEE1CD2C1012A300EF5534 /* ContentView.swift */,
-				E1DEE1CF2C1012A400EF5534 /* Assets.xcassets */,
+				E1DEE1D92C10139900EF5534 /* Assets.xcassets */,
 				E1DEE1D12C1012A400EF5534 /* Preview Content */,
 			);
 			path = SwiftfulCrypto;
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DEE1D32C1012A400EF5534 /* Preview Assets.xcassets in Resources */,
-				E1DEE1D02C1012A400EF5534 /* Assets.xcassets in Resources */,
+				E1DEE1DA2C10139900EF5534 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +275,11 @@
 				DEVELOPMENT_TEAM = WUY822VN6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +304,11 @@
 				DEVELOPMENT_TEAM = WUY822VN6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Tracker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
