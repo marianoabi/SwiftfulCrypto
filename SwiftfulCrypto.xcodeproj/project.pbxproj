@@ -51,8 +51,8 @@
 		E1DEE1CA2C1012A300EF5534 /* SwiftfulCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				E1DEE1CB2C1012A300EF5534 /* SwiftfulCryptoApp.swift */,
-				E1DEE1CD2C1012A300EF5534 /* ContentView.swift */,
+				E1DEE1DC2C1014D400EF5534 /* App */,
+				E1DEE1DD2C1014DD00EF5534 /* Core */,
 				E1DEE1D92C10139900EF5534 /* Assets.xcassets */,
 				E1DEE1D12C1012A400EF5534 /* Preview Content */,
 			);
@@ -65,6 +65,32 @@
 				E1DEE1D22C1012A400EF5534 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1DEE1DC2C1014D400EF5534 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEE1CB2C1012A300EF5534 /* SwiftfulCryptoApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E1DEE1DD2C1014DD00EF5534 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEE1E62C10195600EF5534 /* Components */,
+				E1DEE1E12C1017FB00EF5534 /* Home */,
+				E1DEE1DE2C1014E200EF5534 /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E1DEE1DE2C1014E200EF5534 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				E1DEE1CD2C1012A300EF5534 /* ContentView.swift */,
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
